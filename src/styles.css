@@ -77,3 +77,10 @@ html,body{background:var(--bg);color:var(--text)}
 @media(max-width:620px){.nav{background:#191916;border-color:var(--line)}.nav-link{border-color:#39372f}.hero h1{font-size:clamp(3.4rem,14vw,5.5rem)}.contact{background:var(--panel)}}
 @media(prefers-reduced-motion:reduce){.reveal,.reveal.is-visible,.project-preview iframe,.monogram span{opacity:1;transform:none;filter:none;transition:none;will-change:auto}}
 
+
+.project:nth-of-type(even){grid-template-columns:.8fr 1.2fr}
+.project:nth-of-type(even) .project-preview{grid-column:2;grid-row:1}
+.project:nth-of-type(even) .project-info{grid-column:1;grid-row:1}
+.project-links{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.project-no-link{display:inline-flex;align-items:center;gap:7px}
+@media(max-width:620px){.project:nth-of-type(even){grid-template-columns:1fr}.project:nth-of-type(even) .project-preview,.project:nth-of-type(even) .project-info{grid-column:auto;grid-row:auto}}

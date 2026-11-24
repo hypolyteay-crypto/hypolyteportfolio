@@ -105,11 +105,16 @@ function App() {
 
       <section className="projects section-shell section-pad" id="projets">
         <div className="section-heading"><span className="section-number">02 — PROJETS</span><span className="gold-rule" /></div>
-        <div className="projects-title"><h2>Le travail<br /><em>en cours.</em></h2><p>Des projets personnels pour mettre en pratique et faire évoluer mes compétences.</p></div>
-        {projects.map((project) => <article className="project" key={project.number}>
-          <div className="project-preview" role="img" aria-label="Aperçu de l’interface du SaaS EVENT-FLOW en développement"><iframe src={`${import.meta.env.BASE_URL}event-flow-app/index.html`} title="Aperçu de l’interface EVENT-FLOW en développement" loading="lazy" tabIndex={-1} /></div>
-          <div className="project-info"><div className="project-meta"><span>{project.number} / PROJET PERSONNEL</span><span className="project-status"><i />{project.status}</span></div><h3>{project.name}</h3><p>{project.description}</p><ul className="tag-list">{project.technologies.map((technology) => <li key={technology}>{technology}</li>)}</ul><a className="project-no-link" href={`${import.meta.env.BASE_URL}event-flow-app/index.html`} target="_blank" rel="noreferrer">Ouvrir l’aperçu du projet <ArrowUpRight size={14} /></a></div>
-        </article>)}
+        <div className="projects-title"><h2>Le travail<br /><em>en cours.</em></h2><p>Des projets web présentés avec leur état actuel et un aperçu de leur interface.</p></div>
+        {projects.map((project) => {
+          const previewUrl = project.previewPath.startsWith('http')
+            ? project.previewPath
+            : `${import.meta.env.BASE_URL}${project.previewPath}`
+          return <article className="project" key={project.number}>
+            <div className="project-preview" role="img" aria-label={`Aperçu de ${project.name}`}><iframe src={previewUrl} title={`Aperçu de ${project.name}`} loading="lazy" tabIndex={-1} /></div>
+            <div className="project-info"><div className="project-meta"><span>{project.number} / {project.category}</span><span className="project-status"><i />{project.status}</span></div><h3>{project.name}</h3><p>{project.description}</p><ul className="tag-list">{project.technologies.map((technology) => <li key={technology}>{technology}</li>)}</ul><div className="project-links"><a className="project-no-link" href={previewUrl} target="_blank" rel="noreferrer">{project.previewLabel} <ArrowUpRight size={14} /></a>{project.repositoryUrl && <a className="project-no-link" href={project.repositoryUrl} target="_blank" rel="noreferrer">Dépôt GitHub <ArrowUpRight size={14} /></a>}</div></div>
+          </article>
+        })}
       </section>
 
       <section className="skills section-shell section-pad" id="competences">

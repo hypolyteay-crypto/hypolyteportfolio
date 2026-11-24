@@ -16,7 +16,19 @@ export const projects = [{
   description: 'Plateforme de gestion événementielle, actuellement en développement.',
   status: 'En développement',
   technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-  visual: 'event-flow',
+  category: 'PROJET PERSONNEL',
+  previewPath: 'event-flow-app/index.html',
+  previewLabel: 'Ouvrir l’aperçu',
+}, {
+  number: '02',
+  name: 'Atelier Nébuleuse',
+  description: 'Prototype de site vitrine pour un studio créatif : présentation éditoriale, services et galerie filtrable. Les projets et témoignages affichés sont des contenus de démonstration.',
+  status: 'Prototype en ligne',
+  technologies: ['HTML', 'CSS', 'JavaScript'],
+  category: 'PROTOTYPE WEB',
+  previewPath: 'https://hypolyteay-crypto.github.io/atelier-nebuleuse/',
+  previewLabel: 'Voir le prototype',
+  repositoryUrl: 'https://github.com/hypolyteay-crypto/atelier-nebuleuse',
 }]
 
 export const skills = [
