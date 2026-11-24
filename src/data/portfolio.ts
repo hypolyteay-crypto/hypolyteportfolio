@@ -19,6 +19,7 @@ export const projects = [{
   category: 'PROJET PERSONNEL',
   previewPath: 'event-flow-app/index.html',
   previewLabel: 'Ouvrir l’aperçu',
+  repositoryUrl: undefined,
 }, {
   number: '02',
   name: 'Atelier Nébuleuse',
