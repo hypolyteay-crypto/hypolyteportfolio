@@ -57,3 +57,23 @@ h2{font-family:'Manrope',Arial,sans-serif;font-weight:500;letter-spacing:-.065em
 @media(prefers-reduced-motion:reduce){.reveal,.reveal.is-visible{opacity:1;transform:none;filter:none;transition:none;will-change:auto}.project-preview iframe,.monogram span{transition:none}}
 .hero h1{letter-spacing:-.065em}.hero h1 em{margin-right:.14em}
 
+/* Dark premium art direction: warm charcoal, ivory type, champagne accent */
+:root{color-scheme:dark;--bg:#11110f;--panel:#191916;--text:#f0ece4;--muted:#b3ada2;--line:#39372f;--gold:#c9a871;--gold-light:#dfc79f;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',sans-serif;font-family:var(--sans);background:var(--bg);color:var(--text)}
+html,body{background:var(--bg);color:var(--text)}
+.header{background:rgba(17,17,15,.94);border-bottom-color:rgba(240,236,228,.12);backdrop-filter:blur(10px)}
+.nav-link{color:#b3ada2}.nav-link:hover,.nav-link.active{color:var(--gold-light)}.nav-link.active:after{background:var(--gold)}
+.hero-topline,.hero-index{color:#938d82}.hero-topline{border-color:var(--line)}.hero h1{font:400 clamp(3.8rem,8.4vw,8rem)/.99 var(--serif);letter-spacing:-.06em;max-width:1000px}.hero h1 em,h2 em{font-style:italic;font-weight:400;color:var(--gold)}.hero h1 em{margin-right:.1em}
+.eyebrow,.section-number{color:var(--gold)}.hero-role{color:#e3ddd2}.hero-intro{color:var(--muted)}
+.button-gold,.button-light{background:var(--gold);color:#171511}.button-gold:hover,.button-light:hover{background:var(--gold-light);color:#171511}.text-link{color:#e1dbd1}.text-link:hover{color:var(--gold-light)}
+.monogram{border:1px solid #3b3830;color:var(--gold);font-family:var(--serif);font-weight:400;font-style:italic}.monogram:before,.monogram:after{background:var(--gold)}.monogram i{border-color:var(--gold);background:var(--bg)}
+.availability{border-color:var(--line);color:#999388}.availability strong{color:#e1dbd1}.status-dot,.project-status i{background:#a6b295}.aside-note{color:#c9c1b4;font:italic 1rem/1.7 var(--serif)}
+.scroll-cue{color:#999388}.scroll-cue svg,.hero-index span{color:var(--gold)}
+.section-pad{border-color:var(--line)}.section-heading .gold-rule{background:var(--line)}h2{font:400 clamp(2.7rem,5.2vw,5.2rem)/1.06 var(--serif);letter-spacing:-.045em}
+.about-copy{color:var(--muted)}.about-copy .lead{font:400 1.2rem/1.65 var(--serif);color:#e7e0d5}
+.projects-title>p,.journey-intro{color:var(--muted)}.project{border-color:var(--line)}.project-preview{border-color:#403d35;background:#f8f8f6}.project-info h3{font:400 clamp(2.3rem,4vw,3.7rem)/1.1 var(--serif);letter-spacing:-.035em}.project-meta{color:#9d968a}.project-status{color:#d4cec3}.project-info>p{color:var(--muted)}.tag-list li{border-color:#4a473e;color:#d1cabe}.project-no-link{color:var(--gold-light);border-color:#6a5b43}
+.skill-row,.timeline,.timeline-item{border-color:var(--line)}.skill-index,.timeline-period{color:var(--gold)}.skill-row p,.timeline-item p{color:var(--muted)}.timeline-item h3{font:400 1.35rem var(--serif);letter-spacing:0}.timeline-mark{border-color:var(--gold)}
+.contact{background:var(--panel)}.contact-intro>p:not(.eyebrow){color:var(--muted)}.email-link{color:var(--gold-light);font:400 1.22rem var(--serif)}.social-links a{color:#b3ada2}.social-links a:hover{color:var(--gold-light)}.contact-form label{color:#d4cec3}.contact-form input,.contact-form textarea{color:var(--text);border-color:#514d44}.contact-form input:focus,.contact-form textarea:focus{border-color:var(--gold)}.form-status{color:#c7c0b4}.form-status.error{color:#e1a89c}.form-status.sent{color:#b7c8a8}
+.footer{color:#938d82}.footer>a:last-child:hover{color:var(--gold-light)}.skip-link{background:var(--gold);color:#171511}:focus-visible{outline-color:var(--gold-light)}
+@media(max-width:620px){.nav{background:#191916;border-color:var(--line)}.nav-link{border-color:#39372f}.hero h1{font-size:clamp(3.4rem,14vw,5.5rem)}.contact{background:var(--panel)}}
+@media(prefers-reduced-motion:reduce){.reveal,.reveal.is-visible,.project-preview iframe,.monogram span{opacity:1;transform:none;filter:none;transition:none;will-change:auto}}
+
