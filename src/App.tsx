@@ -79,7 +79,7 @@ function App() {
         <div className="section-heading"><span className="section-number">02 — PROJETS</span><span className="gold-rule" /></div>
         <div className="projects-title"><h2>Le travail<br /><em>en cours.</em></h2><p>Des projets personnels pour mettre en pratique et faire évoluer mes compétences.</p></div>
         {projects.map((project) => <article className="project" key={project.number}>
-          <div className="project-preview" role="img" aria-label="Aperçu du prototype visuel EVENT-FLOW"><iframe src={`${import.meta.env.BASE_URL}event-flow-preview.html#organisateurs`} title="Aperçu du prototype EVENT-FLOW" loading="lazy" tabIndex={-1} /></div>
+          <div className="project-preview" role="img" aria-label="Aperçu de l’interface du SaaS EVENT-FLOW en développement"><iframe src={`${import.meta.env.BASE_URL}event-flow-app/index.html`} title="Aperçu de l’interface EVENT-FLOW en développement" loading="lazy" tabIndex={-1} /></div>
           <div className="project-info"><div className="project-meta"><span>{project.number} / PROJET PERSONNEL</span><span className="project-status"><i />{project.status}</span></div><h3>{project.name}</h3><p>{project.description}</p><ul className="tag-list">{project.technologies.map((technology) => <li key={technology}>{technology}</li>)}</ul><span className="project-no-link">Étude et réalisation en cours</span></div>
         </article>)}
       </section>

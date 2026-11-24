@@ -26,12 +26,12 @@ npm run preview
 - `src/config/public.ts` : identifiants publics des services externes
 - `src/styles.css` : identité visuelle et règles responsive
 - `public/` : favicon, robots.txt, sitemap et page 404
-- `public/event-flow-preview.html` : aperçu HTML du projet EVENT-FLOW fourni
+- `public/event-flow-app/` : build statique du véritable frontend SaaS EVENT-FLOW
 - `.github/workflows/deploy.yml` : construction et publication automatiques
 
 ## Modifier le contenu
 
-Les coordonnées, compétences, formations et projets sont définis dans `src/data/portfolio.ts`. Modifiez les entrées existantes en conservant leur structure. Les identifiants publics de services tiers se trouvent dans `src/config/public.ts`. Le visuel d’EVENT-FLOW utilise l’aperçu HTML fourni dans `public/event-flow-preview.html`, affiché dans la fiche du projet. Un lien vers une démo déployée ou un dépôt ne sera ajouté que lorsqu’il sera disponible.
+Les coordonnées, compétences, formations et projets sont définis dans `src/data/portfolio.ts`. Modifiez les entrées existantes en conservant leur structure. Les identifiants publics de services tiers se trouvent dans `src/config/public.ts`. La fiche EVENT-FLOW intègre une version statique du véritable frontend SaaS construit dans `files-pasted-by-the-user-master/work/event-flow/apps/web`. Pour l’actualiser, lancez `npm --prefix apps/web run build:portfolio-preview` depuis le projet EVENT-FLOW puis copiez `apps/web/dist/` dans `public/event-flow-app/` du portfolio avant de publier. Le mode d’aperçu masque le sélecteur de pays et utilise le chemin GitHub Pages du portfolio.
 
 Pour renseigner la disponibilité, modifiez le libellé « À préciser » dans `src/App.tsx`. Le site n’affiche pas de localisation.
 
