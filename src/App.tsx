@@ -92,7 +92,7 @@ function App() {
           <div className="hero-copy"><p className="eyebrow"><i /> Profil professionnel</p><h1>AYIKOUE<br /><em>Amavi</em> Hypolyte</h1><p className="hero-role">Développeur Web Full-Stack Junior</p><p className="hero-intro">Je conçois et développe des expériences web utiles, fonctionnelles et pensées dans les moindres détails.</p>
             <div className="hero-actions"><a className="button button-gold" href="#projets">Découvrir mes projets <ArrowDownRight size={16} /></a><a className="text-link" href="#contact">Parlons de votre projet <ArrowUpRight size={15} /></a></div>
           </div>
-          <aside className="hero-aside"><div className="monogram" aria-hidden="true"><span>A</span><i /></div><div className="availability"><span className="status-dot" />Disponibilité <strong>À préciser</strong></div><span className="aside-note">Conception attentive.<br />Développement soigné.</span></aside>
+          <aside className="hero-aside"><div className="monogram" aria-hidden="true"><span>A</span><i /></div><span className="aside-note">Conception attentive.<br />Développement soigné.</span></aside>
         </div>
         <a className="scroll-cue" href="#apropos"><span>FAIRE DÉFILER</span><ArrowDown size={14} /></a>
         <div className="hero-index">01 <span>/</span> 06</div>
@@ -108,7 +108,7 @@ function App() {
         <div className="projects-title"><h2>Le travail<br /><em>en cours.</em></h2><p>Des projets personnels pour mettre en pratique et faire évoluer mes compétences.</p></div>
         {projects.map((project) => <article className="project" key={project.number}>
           <div className="project-preview" role="img" aria-label="Aperçu de l’interface du SaaS EVENT-FLOW en développement"><iframe src={`${import.meta.env.BASE_URL}event-flow-app/index.html`} title="Aperçu de l’interface EVENT-FLOW en développement" loading="lazy" tabIndex={-1} /></div>
-          <div className="project-info"><div className="project-meta"><span>{project.number} / PROJET PERSONNEL</span><span className="project-status"><i />{project.status}</span></div><h3>{project.name}</h3><p>{project.description}</p><ul className="tag-list">{project.technologies.map((technology) => <li key={technology}>{technology}</li>)}</ul><span className="project-no-link">Étude et réalisation en cours</span></div>
+          <div className="project-info"><div className="project-meta"><span>{project.number} / PROJET PERSONNEL</span><span className="project-status"><i />{project.status}</span></div><h3>{project.name}</h3><p>{project.description}</p><ul className="tag-list">{project.technologies.map((technology) => <li key={technology}>{technology}</li>)}</ul><a className="project-no-link" href={`${import.meta.env.BASE_URL}event-flow-app/index.html`} target="_blank" rel="noreferrer">Ouvrir l’aperçu du projet <ArrowUpRight size={14} /></a></div>
         </article>)}
       </section>
 
