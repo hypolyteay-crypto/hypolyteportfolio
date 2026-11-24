@@ -84,3 +84,5 @@ html,body{background:var(--bg);color:var(--text)}
 .project-links{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .project-no-link{display:inline-flex;align-items:center;gap:7px}
 @media(max-width:620px){.project:nth-of-type(even){grid-template-columns:1fr}.project:nth-of-type(even) .project-preview,.project:nth-of-type(even) .project-info{grid-column:auto;grid-row:auto}}
+
+@media(max-width:850px){.project-preview iframe{transform:scale(clamp(.19,calc(39.6vw - 19px),.52))}.project:hover .project-preview iframe{transform:scale(clamp(.19,calc(39.6vw - 19px),.52))}}
