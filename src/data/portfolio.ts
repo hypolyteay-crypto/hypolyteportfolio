@@ -42,5 +42,6 @@ export const skills = [
 export const education = [
   { period: '2017 — 2021', school: 'Blaise & Fils', subject: 'Informatique' },
   { period: '2023 — 2024', school: 'IMPACT-ACTION', subject: 'Réseaux et maintenance informatique' },
+  { period: '2024 — 2026', school: 'Diplôme en développement web', subject: 'Diplôme obtenu' },
 ]
 
