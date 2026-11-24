@@ -26,11 +26,12 @@ npm run preview
 - `src/config/public.ts` : identifiants publics des services externes
 - `src/styles.css` : identité visuelle et règles responsive
 - `public/` : favicon, robots.txt, sitemap et page 404
+- `public/event-flow-preview.html` : aperçu HTML du projet EVENT-FLOW fourni
 - `.github/workflows/deploy.yml` : construction et publication automatiques
 
 ## Modifier le contenu
 
-Les coordonnées, compétences, formations et projets sont définis dans `src/data/portfolio.ts`. Modifiez les entrées existantes en conservant leur structure. Les identifiants publics de services tiers se trouvent dans `src/config/public.ts`. Un projet peut renseigner un lien de démonstration et un dépôt lorsqu’ils existent ; aucun lien n’est affiché pour EVENT-FLOW tant qu’il n’a pas été fourni. Son visuel actuel est une composition typographique originale, pas une capture d’écran.
+Les coordonnées, compétences, formations et projets sont définis dans `src/data/portfolio.ts`. Modifiez les entrées existantes en conservant leur structure. Les identifiants publics de services tiers se trouvent dans `src/config/public.ts`. Le visuel d’EVENT-FLOW utilise l’aperçu HTML fourni dans `public/event-flow-preview.html`, affiché dans la fiche du projet. Un lien vers une démo déployée ou un dépôt ne sera ajouté que lorsqu’il sera disponible.
 
 Pour renseigner la disponibilité, modifiez le libellé « À préciser » dans `src/App.tsx`. Le site n’affiche pas de localisation.
 
