@@ -54,6 +54,34 @@ function ContactForm() {
 }
 
 function App() {
+  useEffect(() => {
+    const targets = document.querySelectorAll<HTMLElement>([
+      '.hero-topline', '.hero-copy > *', '.hero-aside > *', '.section-heading',
+      '.about-grid > *', '.projects-title > *', '.project-preview', '.project-info',
+      '.skill-row', '.journey-grid > *', '.timeline-item', '.contact-grid > *',
+    ].join(','))
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+      targets.forEach((target) => target.classList.add('is-visible'))
+      return
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible')
+          observer.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' })
+
+    targets.forEach((target) => {
+      target.classList.add('reveal')
+      observer.observe(target)
+    })
+    return () => observer.disconnect()
+  }, [])
+
   return <>
     <a className="skip-link" href="#contenu">Aller au contenu</a>
     <Header />
