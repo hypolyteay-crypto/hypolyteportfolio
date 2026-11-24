@@ -35,7 +35,7 @@ export const projects = [{
 export const skills = [
   { label: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript'] },
   { label: 'Backend', items: ['PHP'] },
-  { label: 'Base de données', items: ['SQL', 'MySQL'] },
+  { label: 'Base de données', items: ['SQL', 'MySQL', 'PostgreSQL'] },
   { label: 'Outils', items: ['Git', 'GitHub'] },
 ]
 
