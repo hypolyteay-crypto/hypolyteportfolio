@@ -34,9 +34,9 @@ export const projects = [{
 
 export const skills = [
   { label: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript'] },
-  { label: 'Backend', items: ['PHP'] },
+  { label: 'Backend', items: ['PHP', 'Python', 'Supabase', 'Prisma'] },
   { label: 'Base de données', items: ['SQL', 'MySQL', 'PostgreSQL'] },
-  { label: 'Outils', items: ['Git', 'GitHub'] },
+  { label: 'Outils', items: ['Git', 'GitHub', 'VS Code', 'Vercel'] },
 ]
 
 export const education = [
