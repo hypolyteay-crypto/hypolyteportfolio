@@ -5,3 +5,37 @@
 
 .project-preview{height:390px;position:relative;overflow:hidden;background:#f8f8f6;border:1px solid #35342f}.project-preview iframe{width:1440px;height:1200px;border:0;transform:scale(.52);transform-origin:top left;pointer-events:none}@media(max-width:620px){.project-preview{height:280px}.project-preview iframe{transform:scale(.23)}}
 
+/* Contemporary North American editorial direction */
+:root{color-scheme:light;--bg:#f4f2eb;--panel:#ebe9e0;--text:#202420;--muted:#656a64;--line:#d3d3ca;--gold:#315b4d;--gold-light:#23483c;--serif:'Manrope',Arial,sans-serif}
+html,body{background:var(--bg);color:var(--text)}
+.header{background:rgba(244,242,235,.96);border-bottom-color:var(--line);backdrop-filter:none}
+.wordmark{font-size:.82rem;letter-spacing:.2em}.wordmark span{color:var(--gold)}
+.nav-link{color:#626760;font-weight:500}.nav-link:hover,.nav-link.active{color:var(--gold)}.nav-link.active:after{background:var(--gold)}
+.hero{min-height:min(860px,calc(100svh - 78px));padding-top:56px}
+.hero-topline,.hero-index{color:#6c716c}.hero-topline{border-bottom-color:var(--line)}
+.hero-main{grid-template-columns:minmax(0,1fr) 250px;gap:5vw;padding:76px 0 50px}
+.eyebrow,.section-number{color:var(--gold);font-weight:600}
+.hero h1{font-family:'Manrope',Arial,sans-serif;font-weight:500;letter-spacing:-.085em;line-height:.96;font-size:clamp(4.2rem,9.5vw,9.5rem);margin:32px 0 23px}
+.hero h1 em,h2 em{font-style:normal;color:var(--gold);font-weight:400}
+.hero-role{color:#333a34;font-weight:600;font-size:.76rem;letter-spacing:.14em}
+.hero-intro{color:#656a64;font-size:1.04rem;line-height:1.75;max-width:510px}
+.button-gold,.button-light{background:var(--gold);color:#fff}.button-gold:hover,.button-light:hover{background:#23483c}
+.text-link{color:#303731}.text-link:hover{color:var(--gold)}
+.hero-aside{align-items:flex-end}.monogram{width:190px;height:226px;border:0;border-left:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--gold);font-family:'Manrope',Arial,sans-serif;font-weight:300;font-style:normal;font-size:9rem}
+.monogram:before,.monogram:after{background:var(--gold)}.monogram i{border-color:var(--gold);background:var(--bg)}
+.availability{border-top-color:var(--line);color:#6c716c}.availability strong{color:#303731}.status-dot,.project-status i{background:var(--gold)}.aside-note{color:#626760;font-family:'DM Sans',sans-serif;font-style:normal;font-size:.82rem;line-height:1.65}
+.scroll-cue{color:#6c716c}.scroll-cue svg,.hero-index span{color:var(--gold)}
+.section-pad{border-color:var(--line)}.gold-rule{background:var(--line)}
+h2{font-family:'Manrope',Arial,sans-serif;font-weight:500;letter-spacing:-.065em}
+.about-copy{color:#626760}.about-copy .lead{font-family:'Manrope',Arial,sans-serif;font-size:1.18rem;color:#303731;font-weight:500;line-height:1.6}
+.projects-title>p,.journey-intro{color:#626760}.project{border-color:var(--line)}
+.project-preview{border-color:var(--line);background:#fff}.project-info h3{font-family:'Manrope',Arial,sans-serif;font-weight:500;letter-spacing:-.065em}
+.project-meta{color:#777d76}.project-status{color:#4e554e}.project-info>p{color:#626760}.tag-list li{border-color:#d2d3c9;color:#4c554e}
+.skill-row,.timeline,.timeline-item{border-color:var(--line)}.skill-index,.timeline-period{color:var(--gold)}.skill-row p,.timeline-item p{color:#626760}.timeline-item h3{font-family:'Manrope',Arial,sans-serif;font-weight:500;letter-spacing:-.035em}.timeline-mark{border-color:var(--gold)}
+.contact{background:#e9e8df}.contact-intro>p:not(.eyebrow){color:#626760}.email-link{color:var(--gold);font-family:'Manrope',Arial,sans-serif;font-weight:600}.social-links a{color:#5f655e}.social-links a:hover{color:var(--gold)}
+.contact-form label{color:#414941}.contact-form input,.contact-form textarea{color:var(--text);border-color:#bfc2b8}.contact-form input:focus,.contact-form textarea:focus{border-color:var(--gold)}
+.footer{color:#666c65}.footer>a:last-child:hover{color:var(--gold)}
+:focus-visible{outline-color:var(--gold-light)}
+@media(max-width:850px){.hero-main{grid-template-columns:1fr 190px;gap:30px}.monogram{width:165px;height:200px}}
+@media(max-width:620px){.nav{background:var(--bg);border-bottom-color:var(--line)}.nav-link{border-color:var(--line)}.hero{padding-top:44px}.hero-main{padding-top:48px}.hero h1{font-size:clamp(3.5rem,14.5vw,5.6rem);letter-spacing:-.085em}.project-preview{background:#fff}.contact{background:#e9e8df}}
+
